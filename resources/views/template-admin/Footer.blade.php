@@ -4,5 +4,5 @@
         {{-- Anything you want --}}
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="javascript:void(0)">Elga X AdminLTE.</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2021 <a href="javascript:void(0)">Elga X AdminLTE.</a>.</strong> All rights reserved.
 </footer>

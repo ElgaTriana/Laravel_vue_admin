@@ -7,7 +7,7 @@
     </head>
     <body class="hold-transition sidebar-mini">
         <!-- wrapper -->
-        <div class="wrapper">
+        <div class="wrapper"  id="app">
 
             <!-- Navbar -->
             @include('template-admin.navbar')
@@ -18,8 +18,9 @@
             <!-- /.Main Sidebar Container -->
 
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper" id="app">
-                <example-component></example-component>
+            <div class="content-wrapper">
+                {{-- <example-component></example-component> --}}
+                <router-view></router-view>
             </div>
             <!-- /.content-wrapper -->
 
