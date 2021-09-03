@@ -14,6 +14,8 @@ import  HasError from 'vform'
 
 import  AlertError from 'vform'
 
+// Vue.component(Form.name, Form)
+
 // Vue.component(HasError.name, HasError)
 
 // Vue.component(AlertError.name, AlertError)
