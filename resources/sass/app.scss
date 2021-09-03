@@ -15,3 +15,12 @@ $fa-font-path:"../webfonts";
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
+
+// Kenalin Kelas Aktif 
+.router-link-exact-active{
+    background-color: rgb(47, 49, 49);
+    color: bisque !important;
+    font-style: italic;
+    font-weight: bold;
+}
+// End

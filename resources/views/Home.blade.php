@@ -19,7 +19,6 @@
 
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
-                {{-- <example-component></example-component> --}}
                 <router-view></router-view>
             </div>
             <!-- /.content-wrapper -->

@@ -34,19 +34,19 @@
             <ul class="nav nav-treeview">
             <li class="nav-item">
                 <router-link to="data-user" class="nav-link">
-                    <i class="fas fa-users nav-icon"></i>
-                    <p>Data User</p>
+                    <i class="fas fa-users nav-icon green"></i>
+                    <p>Data Pengguna</p>
                 </router-link>
             </li>
             <li class="nav-item">
                 <router-link to="data-level" class="nav-link">
-                    <i class="fas fa-user-tie"></i>
+                    <i class="fas fa-user-tie nav-icon blue"></i>
                     <p>Data Level</p>
                 </router-link>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                <i class="fas fa-sign-out-alt nav-icon"></i>
+                <i class="fas fa-sign-out-alt nav-icon red"></i>
                 <p>Logout</p>
                 </a>
             </li>
