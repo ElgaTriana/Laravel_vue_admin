@@ -8,6 +8,16 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 
+import  Form from 'vform'
+
+import  HasError from 'vform'
+
+import  AlertError from 'vform'
+
+// Vue.component(HasError.name, HasError)
+
+// Vue.component(AlertError.name, AlertError)
+
 import Vue from 'vue';
 
 import VueRouter from 'vue-router'
