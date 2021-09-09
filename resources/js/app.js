@@ -8,20 +8,43 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 
-import  Form from 'vform'
-
-import  HasError from 'vform'
-
-import  AlertError from 'vform'
-
-// Vue.component(Form.name, Form)
-
-// Vue.component(HasError.name, HasError)
-
-// Vue.component(AlertError.name, AlertError)
-
 import Vue from 'vue';
 
+// Axioss validasi
+import {
+    Form,
+    HasError,
+    AlertError
+} from 'vform'
+
+window.Form = Form;
+// Vue.filter(HasError.name, HasError)
+// Vue.filter(AlertError.name, AlertError)
+// End Axioss
+
+// Save tanpa refresh
+let Fire = new Vue();
+window.Fire = Fire;
+// End Save tanpa refresh
+
+// Sweetalert
+import Swal from 'sweetalert2'
+window.Swal = Swal;
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer:3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+});
+window.Toast = Toast;
+// End Sweetalert
+
+//Vue Router
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
@@ -31,11 +54,14 @@ let routes =[
     {path: '/data-level', component:require('./components/pengguna/Data-level.vue').default}
 ]
 
+// Halaman Contoh
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// End halaman contoh
 
 const router = new VueRouter({
     routes
 })
+// End vue router
 
 const app = new Vue({
     el: '#app',
